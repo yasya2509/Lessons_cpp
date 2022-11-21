@@ -1,36 +1,21 @@
 ﻿#include <iostream> 
 using namespace std;
-void FillArr(int arr[], int size) //запонить масив числами от 1000 до 1010 
-{
-	for (int i = 0; i < size; ++i)
-	{
-		arr[i] = 1000 + i;
-	}
-}
-void MultArr(int arr[], int size) //увеличели каждый элемент масива в 10 раз 
-{
-	for (int i = 0; i < size; ++i)
-	{
-		arr[i] *= 10;
-	}
-}
-
-void PrintArr(int arr[], int size) //вывели значения масива в консоль 
-{
-	for (int i = 0; i < size; i++)
-	{
-		cout << arr[i] << endl;
-	}
-}
 
 int main()
 {
-	const int size = 11;
-	int arr[size];
-	FillArr(arr, size);
-	MultArr(arr, size);
-	PrintArr(arr, size);
-	cout << " Hello World" << endl;
+    const int size_1 = 2;
+    const int size_2 = 3;
+    int arr[size_1][size_2] = {
+        {5,6,7},
+        {8,9,0}
+    };
+    for (int i = 0; i < size_1; ++i) {
+        for (int j = 0; j < size_2; ++j) {
+            //arr[i][j] = 
+            cout << arr[i][j] << ' ';
+        }
+        cout << endl;
+    } 
 
 	return 0;
 }
