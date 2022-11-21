@@ -30,7 +30,7 @@ int main()
 	FillArr(arr, size);
 	MultArr(arr, size);
 	PrintArr(arr, size);
-
+	cout << " Hello World" << endl;
 
 	return 0;
 }
